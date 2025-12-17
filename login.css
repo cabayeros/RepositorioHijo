@@ -1,0 +1,153 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg); 
+    padding: 20px;
+}
+
+.login-box {
+    background-color: var(--card-bg); 
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow); 
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    border: 1px solid var(--border); 
+}
+
+.login-logo {
+    height: 60px; 
+    margin-bottom: 25px;
+}
+
+.login-box h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.login-box p {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fcfcfc;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--accent);
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 28px; 
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn.login-btn {
+    background-color: var(--accent); 
+    color: #fff;
+    margin-top: 15px;
+}
+
+.btn.login-btn:hover {
+    background-color: #006b69; 
+    transform: translateY(-1px);
+}
+
+.btn.create-account-btn {
+    background-color: #e0e0e0;
+    color: #444;
+    margin-top: 25px;
+}
+
+.btn.create-account-btn:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-1px);
+}
+
+/* Separador de o */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    color: var(--muted);
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--border);
+}
+
+.separator:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .5em;
+}
+
+/* Link para restablecer la contraseña */
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: var(--accent);
+}
+
+/* Lo hacemos responsive, para pantallas pequeñas */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px 20px;
+    }
+    .login-logo {
+        height: 50px;
+    }
+    .login-box h2 {
+        font-size: 24px;
+    }
+    .btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}

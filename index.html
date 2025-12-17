@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conectum — Inicio</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- barra lateral -->
+    <!-- Jorge soy tu fan -->
+
+    <aside class="sidebar" aria-label="Barra lateral">
+      <div class="sidebar-inner">
+        <button class="sb-btn" title="Post">
+          <i class="fa-solid fa-pen"></i>
+          <span>Post</span>
+        </button>
+
+        <button class="sb-btn active" title="Jobs">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Jobs</span>
+          <span class="badge">8</span>
+        </button>
+
+        <button class="sb-btn" title="People">
+          <i class="fa-solid fa-user-group"></i>
+          <span>People</span>
+          <span class="badge">8</span>
+        </button>
+
+        <button class="sb-btn" title="Chat">
+          <i class="fa-regular fa-message"></i>
+          <span>Chat</span>
+        </button>
+
+        <button class="sb-btn" title="Alerts">
+          <i class="fa-regular fa-bell"></i>
+          <span>Alerts</span>
+        </button>
+
+        <button class="sb-btn" title="Profile">
+          <i class="fa-solid fa-user"></i>
+          <span>Profile</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main" role="main">
+      <header class="topbar">
+        <div class="top-left">
+          <img src="conectum_logo.png" alt="Conectum" class="logo">
+        </div>
+
+        <div class="top-center">
+          <div class="search search-main" role="search" aria-label="Buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search" />
+          </div>
+
+          <div class="search search-location" aria-label="Ubicación">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Ciudad o tipo de trabajo" />
+          </div>
+        </div>
+
+        <div class="top-right">
+          <button class="icon-btn" title="Configuración"><i class="fa-solid fa-gear"></i></button>
+        </div>
+      </header>
+
+      <div class="section-title-wrap">
+        <div class="section-title">Trabajos sugeridos</div>
+      </div>
+
+      <section class="jobs-section" aria-label="Trabajos sugeridos">
+        <button class="carousel-arrow left" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="jobs-track" id="jobsTrack">
+          <article class="job-card" tabindex="0">
+            <header class="job-card-header">
+              <div class="job-meta">
+                <span class="job-role">Full Stack Engineer</span>
+                <div class="company-meta">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYRZugjieBYHZcaHc3FSTQm85NmZ9TCPdzA&s" alt="" class="company-icon">
+                  <span class="company-name">Telus Digital · Guatemala</span>
+                </div>
+              </div>
+              <button class="more-btn" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </header>
+
+            <img src="https://cdn.pixabay.com/video/2021/09/05/87593-602317653_tiny.jpg" alt="Equipo en oficina — imagen de oferta" class="job-image">
+
+            <div class="job-body">
+              <h3>Sobre el trabajo</h3>
+              <p class="job-desc">
+                Rol de Full-Stack Senior (4-5 años exp.) para desarrollo punta a punta de soluciones digitales en un entorno Agile.
+              </p>
+
+              <ul class="job-list">
+                <li><strong>Tecnologías clave:</strong></li>
+                <li>Node.js, JavaScript/TypeScript</li>
+                <li>Frontend: React / HTML5, CSS3</li>
+                <li>Backend: APIs REST y Microservicios</li>
+                <li>Cloud (GCP): Cloud Functions, Pub/Sub, BigQuery</li>
+              </ul>
+            </div>
+
+            <div class="company-card">
+              <div class="company-card-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYRZugjieBYHZcaHc3FSTQm85NmZ9TCPdzA&s" alt="TELUS Digital logo" class="comp-logo">
+                <div>
+                  <div class="comp-title">TELUS Digital <i class="fa-solid fa-circle-check verified" title="Compañía verificada"></i></div>
+                  <div class="comp-followers">976,132 seguidores actualmente</div>
+                </div>
+              </div>
+              <button class="follow-btn">Seguir</button>
+              <p class="comp-desc">
+                TELUS Digital es un socio de transformación digital enfocado en crear experiencias duraderas...
+              </p>
+            </div>
+
+            <div class="job-tags">
+              <span class="tag">Presencial</span>
+              <span class="tag">Tiempo completo</span>
+              <span class="tag">Sueldo no especificado</span>
+              <span class="tag">Guatemala / El Salvador</span>
+            </div>
+
+            <div class="job-actions">
+              <button class="btn chat">Chatear</button>
+              <button class="btn apply">Aplicar</button>
+              <button class="save" title="Guardar"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </article>
+
+          <article class="job-card" tabindex="0">
+            <header class="job-card-header">
+              <div class="job-meta">
+                <span class="job-role">Full Stack Engineer</span>
+                <div class="company-meta">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYRZugjieBYHZcaHc3FSTQm85NmZ9TCPdzA&s" alt="" class="company-icon">
+                  <span class="company-name">Telus Digital · Guatemala</span>
+                </div>
+              </div>
+              <button class="more-btn" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </header>
+
+            <img src="https://cdn.pixabay.com/video/2021/09/05/87593-602317653_tiny.jpg" alt="Equipo en oficina — imagen de oferta" class="job-image">
+
+            <div class="job-body">
+              <h3>Sobre el trabajo</h3>
+              <p class="job-desc">
+                Rol de Full-Stack Senior (4-5 años exp.) para desarrollo punta a punta de soluciones digitales en un entorno Agile.
+              </p>
+
+              <ul class="job-list">
+                <li><strong>Tecnologías clave:</strong></li>
+                <li>Node.js, JavaScript/TypeScript</li>
+                <li>Frontend: React / HTML5, CSS3</li>
+                <li>Backend: APIs REST y Microservicios</li>
+                <li>Cloud (GCP): Cloud Functions, Pub/Sub, BigQuery</li>
+              </ul>
+            </div>
+
+            <div class="company-card">
+              <div class="company-card-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYRZugjieBYHZcaHc3FSTQm85NmZ9TCPdzA&s" alt="TELUS Digital logo" class="comp-logo">
+                <div>
+                  <div class="comp-title">TELUS Digital <i class="fa-solid fa-circle-check verified"></i></div>
+                  <div class="comp-followers">976,132 seguidores actualmente</div>
+                </div>
+              </div>
+              <button class="follow-btn">Seguir</button>
+              <p class="comp-desc">
+                TELUS Digital es un socio de transformación digital enfocado en crear experiencias duraderas...
+              </p>
+            </div>
+
+            <div class="job-tags">
+              <span class="tag">Presencial</span>
+              <span class="tag">Tiempo completo</span>
+              <span class="tag">Sueldo no especificado</span>
+              <span class="tag">Guatemala / El Salvador</span>
+            </div>
+
+            <div class="job-actions">
+              <button class="btn chat">Chatear</button>
+              <button class="btn apply">Aplicar</button>
+              <button class="save" title="Guardar"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </article>
+
+          <!-- u can´t always fight nature, John... -->
+        </div>
+
+        <button class="carousel-arrow right" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

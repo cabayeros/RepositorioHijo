@@ -1,2 +1,2 @@
-# RepositorioHijo
-Hijo
+# conectum-frontend
+Conectum FrontEnd
