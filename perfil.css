@@ -10,75 +10,86 @@
   margin-top:20px;
 }
 
-/* PROFILE GRID */
-.profile-grid{
-  display:grid;
-  grid-template-columns: 280px 1.2fr 260px;
-  gap:24px;
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: min-content;
+  gap: 20px;
 }
 
-.box.profile-main{ 
-    min-height:180px; 
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Separación entre boxes */
 }
 
-.box.medium{
-  min-height:120px;
+/* BOXES */
+.box {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 12px; /* padding compacto */
+  font-weight: 600;
+  overflow: hidden;
 }
 
-.box.small{
-  min-height:90px;
+.box-mainperfil{
+  grid-column: 1 / -1; /* Desde columna 1 hasta la última */
+  padding: 10px;
+  font-size: 1.0rem;
+  min-height: 150px;
+}
+  
+.box-studies{
+  min-height: 150px
+}
+
+.box-contacts{
+  min-height: 100px
+}
+
+.box-post{
+  min-height: 300px
+}
+
+.box-experiences{
+  min-height: 300px;
+}
+
+.box-certifications{
+  min-height: 10px;
 }
 
 
-/* COLUMNS */
-.profile-left,
-.profile-center,
-.profile-right{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
+.box-interests{
+  min-height: 300px
 }
 
-/* Secciones*/
-.section{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
+.box-volunteering{
+  min-height: 10px
 }
 
-.section-header h3{
-  margin:0;
-  font-size:15px;
-  font-weight:700;
+.box-skills{
+  min-height: 70px;
 }
 
-/* interno*/ 
 
-.section-content{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
-
-.item{
-  display:flex;
-  gap:12px;
-  align-items:flex-start;
-}
 
 .item-main{
   display:flex;
   flex-direction:column;
+  font-size:15px;
   gap:4px;
 }
 
 .item-sub{
-  font-size:13px;
+  font-size:12px;
   color:#555;
 }
 
 .item-meta{
-  font-size:12px;
+  font-size:11px;
   color:#888;
 }
 
@@ -88,17 +99,15 @@
   height:36px;
   border-radius:50%;
   flex-shrink:0;
-  background:linear-gradient(135deg, #dfe6e9, #f1f2f6);
+  background-image: url("landivar_logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-/* BOXES */
-.box{
-  background:var(--card-bg);
-  border-radius:var(--radius);
-  border:1px solid var(--border);
-  box-shadow:var(--shadow);
-  padding:16px;
-  min-height:90px;
-  font-weight:600;
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .profile-grid {
+    grid-template-columns: 1fr; /* una columna en tablet/móvil */
+  }
 }

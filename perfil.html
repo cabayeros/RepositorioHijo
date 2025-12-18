@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conectum — Perfil de usuario</title>
+    <title>Conectum - Perfil de usuario</title>
     
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -55,7 +55,7 @@
                     <img src="conectum_logo.png" alt="Conectum" class="logo">
                 </div>
                 <div class="top-center">
-                    <div class="search search-main" role="search" ariabel="Buscar">
+                    <div class="search search-main" role="search" aria-label="Buscar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="search" placeholder="Search"/>
                     </div>
@@ -65,46 +65,63 @@
                 </div>
             </header>
 
-                <!-- Mi parte -->
+
+
+             <!--Codigo modificado-->
             <section class="page">
+                <!--Contenido Perfil-->
                 <div class="profile-grid">
-
-                    <aside class="profile-left">
-                        <div class="box section">
-                            
-                            <!-- Contenido Estudios-->
-                            
-                            <div class="section-header">
-                                <h3>Estudios</h3>
-                            </div>
-
-                            <div class="section-content">
-
-                                <div class="item">
-                                    <div class="avatar"></div>
-                                    <div class="item-main">
-                                        <strong>Universidad Rafael Landivar</strong>
-                                        <span class="item-sub">Ingeniería en Sistemas</span>
-                                        <span class="item-meta">2022-Actualidad</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="box">Contactos</div>    
-                    </aside>
-
-                    <section class="profile-center">
-                        <div class="box">Perfil principal</div>
-                        <div class="box">Premios</div>
-                        <div class="box">Certificaciones</div>
-                    </section>
                     
-                    <aside class="profile-right">
-                        <div class="box">Experiencias</div>
-                        <div class="box">Intereses</div>
-                    </aside>
+                 <!-- Box principal ocupa toda la fila -->
+                         <div class="box box-mainperfil">
+                             <h2>Perfil principal</h2>
+                         </div>
 
+                        <div class="col left">
+                             <div class="box box-studies">
+                                <h2>Estudios</h2>
+                                 <div class="academic-content">
+                                     <div class="avatar"></div>
+                                      <div class="academic-info">
+                                         <strong>Universidad Rafael Landivar</strong>
+                                         <span class="item-sub">Ingeniería en Sistemas</span>
+                                         <span class="item-meta">2022-Actualidad</span>
+                                       </div>
+                                 </div>
+                             </div>
+                            
+                             <div class="box box-contacts">
+                                <h2>Contactos</h2>
+                             </div>
+
+                             <div class="box box-interests">
+                                <h2>Intereses</h2>
+                             </div>
+                      </div>
+
+                      <!-- Columna central -->
+                       <div class="col center">
+                             <div class="box box-experiences">
+                                <h2>Experiencias</h2>
+                             </div>
+                             <div class="box box-post">
+                                <h2>post</h2>
+                             </div>
+                       </div>
+
+                        <div class="col right">
+                             <div class="box box-certifications">
+                                <h2>Certificaciones</h2> 
+                             </div>
+                             <div class="box box-volunteering">
+                                <h2>Voluntariado</h2>
+                             </div>
+
+                             <div class="box box-skills">
+                                <h2>Aptitudes</h2>
+                                
+                             </div>
+                        </div>
                 </div>
             </section>
         </main>
